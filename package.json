@@ -30,7 +30,7 @@
         "*"
     ],
     "main": "./out/extension",
-    "icon": "https://i.ibb.co/3p9N0Vp/icon.png",
+    "icon": "icon.png",
     "contributes": {
         "commands": [{
             "command": "extension.caringOtaku",

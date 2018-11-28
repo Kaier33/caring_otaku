@@ -9,7 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
     // console.log('Congratulations, your extension "CaringOtaku" is now active!');
     let disposable = vscode.commands.registerCommand('extension.caringOtaku', () => {
 
-        vscode.window.showInformationMessage('肥宅快乐编程, 启动! ✿✿ヽ(°▽°)ノ✿✿');
+        vscode.window.showInformationMessage('肥宅快乐编程, 启动!', '✿✿ヽ(°▽°)ノ✿✿');
         const config = vscode.workspace.getConfiguration('CaringOtaku');
 
         const reg = new RegExp(/^([01][0-9]|2[0-3]):([0-5][0-9])$/);
