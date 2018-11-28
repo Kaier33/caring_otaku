@@ -2,10 +2,26 @@
     "name": "caring-otaku",
     "displayName": "caring_otaku",
     "description": "caring_otaku",
-    "publisher": "KaierChou", 
+    "publisher": "KaierChou",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.29.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/KaierChou/vscode_extension.git"
+    },
+    "bugs": {
+        "url": "https://github.com/KaierChou/vscode_extension/issues"
+    },
+    "galleryBanner": {
+        "color": "#0273D4",
+        "theme": "dark"
+    },
+    "author": {
+        "name": "KaierChou",
+        "email": "kaier_chou@163.com",
+        "url": "https://github.com/KaierChou"
     },
     "categories": [
         "Other"
@@ -16,12 +32,10 @@
     "main": "./out/extension",
     "icon": "https://i.ibb.co/3p9N0Vp/icon.png",
     "contributes": {
-        "commands": [
-            {
-                "command": "extension.caringOtaku",
-                "title": "Caring Otaku"
-            }
-        ],
+        "commands": [{
+            "command": "extension.caringOtaku",
+            "title": "Caring Otaku"
+        }],
         "configuration": {
             "type": "object",
             "title": "caringOtaku configuration",
@@ -48,13 +62,11 @@
                 }
             }
         },
-        "keybindings": [
-            {
-                "command": "extension.caringOtaku",
-                "key": "ctrl+shift+,",
-                "mac": "ctrl+shift+,"
-            }
-        ]
+        "keybindings": [{
+            "command": "extension.caringOtaku",
+            "key": "ctrl+shift+,",
+            "mac": "ctrl+shift+,"
+        }]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
@@ -72,5 +84,6 @@
     },
     "dependencies": {
         "web-request": "^1.0.7"
-    }
+    },
+    "license": "MIT"
 }
