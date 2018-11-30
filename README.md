@@ -5,10 +5,10 @@
 
 
 关爱肥宅, 从我做起.  
-caring the otaku begins with me.   
+Caring the otaku begins with me.   
 
 早起早睡, 按时吃饭;  
-keep good hours , Have meals on time.
+Keep good hours , Have meals on time.
 
 ## Features
 至少还有我 , 提醒你按时吃饭 , 到点下班.  
