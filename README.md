@@ -16,8 +16,8 @@ Keep good hours , Have meals on time.
 
 
 ***
-## Quick start:
-> commands  ```ctrl+shift+,```  Link Start!
+## Quick start:  
+> commands  ```ctrl+shift+,``` =>  Link Start!
 
 > setting 
 
