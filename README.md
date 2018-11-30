@@ -22,7 +22,7 @@ Keep good hours , Have meals on time.
 > setting 
 
 Name | Description | Default 
-- | :-: | -: 
+| ------ | ------ | ------ |
 CaringOtaku.defaultCity | 城市名，支持拼音和中文(建议) | 深圳
 CaringOtaku.freeweatherAK | 京东万象KEY(免费),建议使用自己的 | mine
 CaringOtaku.lunchTime | 吃饭时间 | 11:50
