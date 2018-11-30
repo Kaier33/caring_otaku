@@ -3,7 +3,7 @@
     "displayName": "caring_otaku",
     "description": "caring_otaku",
     "publisher": "KaierChou",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.29.0"
     },
@@ -32,10 +32,12 @@
     "main": "./out/extension",
     "icon": "icon.png",
     "contributes": {
-        "commands": [{
-            "command": "extension.caringOtaku",
-            "title": "Caring Otaku"
-        }],
+        "commands": [
+            {
+                "command": "extension.caringOtaku",
+                "title": "Caring Otaku"
+            }
+        ],
         "configuration": {
             "type": "object",
             "title": "caringOtaku configuration",
@@ -62,11 +64,13 @@
                 }
             }
         },
-        "keybindings": [{
-            "command": "extension.caringOtaku",
-            "key": "ctrl+shift+,",
-            "mac": "ctrl+shift+,"
-        }]
+        "keybindings": [
+            {
+                "command": "extension.caringOtaku",
+                "key": "ctrl+shift+,",
+                "mac": "ctrl+shift+,"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",

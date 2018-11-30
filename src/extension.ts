@@ -8,33 +8,21 @@ let timer: any;
 export function activate(context: vscode.ExtensionContext) {
     // console.log('Congratulations, your extension "CaringOtaku" is now active!');
     let disposable = vscode.commands.registerCommand('extension.caringOtaku', () => {
-
-        vscode.window.showInformationMessage('肥宅快乐编程, 启动!', '✿✿ヽ(°▽°)ノ✿✿');
+        vscode.window.showInformationMessage('肥宅快乐编程, 启动! ✿✿ヽ(°▽°)ノ✿✿');
         const config = vscode.workspace.getConfiguration('CaringOtaku');
 
-        const reg = new RegExp(/^([01][0-9]|2[0-3]):([0-5][0-9])$/);
-        const addZero1 = (num: String | Number, len = 2) => `0${num}`.slice(-len);
+        const reg = new RegExp(/^([01][0-9]|2[0-3]|[0]):([0-5][0-9])$/);
         if (config.lunchTime && reg.test(config.lunchTime)) {
             if (timer) clearInterval(timer)
             timer = setInterval(function () {
-                const configTime = vscode.workspace.getConfiguration('caringOtaku')
-                const [lh, lm] = configTime.lunchTime.split(':')
-                const [gh, gm] = configTime.getOffTime.split(':')
-                if (
-                    lh &&
-                    lm &&
-                    addZero1(new Date().getHours()) == lh &&
-                    addZero1(new Date().getMinutes()) == lm
-                ) {
-                    getWeatherInfo(configTime.defaultCity, 1)
+                const [lh, lm] = config.lunchTime.split(':')
+                const [gh, gm] = config.getOffTime.split(':')
+              
+                if (`${lh}:${lm}`) {
+                    getWeatherInfo(config.defaultCity, 1)
                 }
-                if (
-                    gh &&
-                    gm &&
-                    addZero1(new Date().getHours()) == gh &&
-                    addZero1(new Date().getMinutes()) == gm
-                ) {
-                    getWeatherInfo(configTime.defaultCity, 2)
+                if (`${gh}:${gm}`) {
+                    getWeatherInfo(config.defaultCity, 2)
                 }
             }, 60000)
         }
@@ -91,7 +79,7 @@ function getWeatherInfo(cityName: string, operation: Number = -1): void {
         }
 
         if (operation == 1) {
-            vscode.window.showInformationMessage(`午饭时间到! 🍚🥢`)
+            vscode.window.showInformationMessage(`午饭时间到啦! 🍚🥢`)
         }
 
         if (operation == 2) {
