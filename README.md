@@ -29,6 +29,6 @@ CaringOtaku.lunchTime | 吃饭时间 | 11:50
 CaringOtaku.getOffTime| 下班时间 | 18:00
 
 
-### 1.0.0
+### 1.0.1
 
 **Enjoy!**
