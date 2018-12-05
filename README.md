@@ -1,6 +1,6 @@
 ## Caring Otaku
 
-[![GitHub stars](https://img.shields.io/github/stars/KaierChou/caring_otaku.svg)](https://github.com/KaierChou/caring_otaku.git/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/KaierChou/caring_otaku.svg)](https://github.com/KaierChou/caring_otaku)
 [![GitHub license](https://img.shields.io/github/license/KaierChou/caring_otaku.svg)](https://github.com/KaierChou/caring_otaku) 
 
 
@@ -24,7 +24,7 @@ Keep good hours , Have meals on time.
 Name | Description | Default 
 | ------ | ------ | ------ |
 CaringOtaku.defaultCity | 城市名，支持拼音和中文(建议) | 深圳
-CaringOtaku.freeweatherAK | 京东万象KEY(免费),建议使用自己的 | mine
+CaringOtaku.freeweatherAK | 京东万象KEY(免费),建议使用自己的 | my key
 CaringOtaku.lunchTime | 吃饭时间 | 11:50
 CaringOtaku.getOffTime | 下班时间 | 18:00
 
@@ -32,3 +32,7 @@ CaringOtaku.getOffTime | 下班时间 | 18:00
 ### 1.0.3
 
 **Enjoy!**
+
+todo: 
+1. MD的 setting 改成图片. 在扩展中不渲染表格
+2. 凌晨提示取睡觉! 
