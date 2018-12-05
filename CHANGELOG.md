@@ -1,7 +1,6 @@
-# Change Log
-All notable changes to the "caring-otaku" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-- Initial release
+# Change Log 
++ 1.0.1 修复bug...
+```
+时间补零, 下雨文案加个可能,毕竟是天气预报嘛~
+```  
++ 1.0.0 初版  

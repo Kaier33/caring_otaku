@@ -15,13 +15,13 @@ export function activate(context: vscode.ExtensionContext) {
         if (config.lunchTime && reg.test(config.lunchTime)) {
             if (timer) clearInterval(timer)
             timer = setInterval(function () {
+                let now = new Date();
                 const [lh, lm] = config.lunchTime.split(':')
                 const [gh, gm] = config.getOffTime.split(':')
-              
-                if (`${lh}:${lm}`) {
+                if (`${fillZero(lh)}:${fillZero(lm)}`===`${fillZero(now.getHours())}:${fillZero(now.getMinutes())}`) {
                     getWeatherInfo(config.defaultCity, 1)
                 }
-                if (`${gh}:${gm}`) {
+                if (`${fillZero(gh)}:${fillZero(gm)}`===`${fillZero(now.getHours())}:${fillZero(now.getMinutes())}`) {
                     getWeatherInfo(config.defaultCity, 2)
                 }
             }, 60000)
@@ -75,7 +75,7 @@ function getWeatherInfo(cityName: string, operation: Number = -1): void {
         vscode.window.showInformationMessage(`空气质量 ：${resStr}`);
         if (weatherData.hourly_forecast[0].cond.code >= 300 &&
             weatherData.hourly_forecast[0].cond.code < 500) {
-            vscode.window.showInformationMessage(`${weatherData.basic.city}, ${weatherData.now.cond.txt}, ${weatherData.now.tmp}°C, 未来两小时${weatherData.hourly_forecast[0].cond.txt},出门记得带伞 ☂️`, '嗷👌')
+            vscode.window.showInformationMessage(`${weatherData.basic.city}, ${weatherData.now.cond.txt}, ${weatherData.now.tmp}°C, 未来两小时可能有${weatherData.hourly_forecast[0].cond.txt},出门记得带伞 ☂️`, '嗷👌')
         }
 
         if (operation == 1) {
@@ -113,6 +113,15 @@ function extractInfo(parm: any) {
         tmpRange.min +
         '°C'
     )
+}
+
+function fillZero(timeStr: String | Number) : String {
+    let res = timeStr.toString()
+    if (res.length==1) {
+        return res = '0'+ res
+    }else {
+        return res
+    }
 }
 
 

@@ -3,7 +3,7 @@
     "displayName": "caring_otaku",
     "description": "caring_otaku",
     "publisher": "KaierChou",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "vscode": "^1.29.0"
     },
