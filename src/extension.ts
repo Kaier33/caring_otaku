@@ -9,15 +9,21 @@ export function activate(context: vscode.ExtensionContext) {
     // console.log('Congratulations, your extension "CaringOtaku" is now active!');
     let disposable = vscode.commands.registerCommand('extension.caringOtaku', () => {
         vscode.window.showInformationMessage('肥宅快乐编程, 启动! ✿✿ヽ(°▽°)ノ✿✿');
+       
         const config = vscode.workspace.getConfiguration('CaringOtaku');
-
         const reg = new RegExp(/^([01][0-9]|2[0-3]|[0]):([0-5][0-9])$/);
         if (config.lunchTime && reg.test(config.lunchTime)) {
             if (timer) clearInterval(timer)
+            const [lh, lm] = config.lunchTime.split(':')
+            const [gh, gm] = config.getOffTime.split(':')
+            const [sh] = config.sleepTime.split(':')
             timer = setInterval(function () {
                 let now = new Date();
-                const [lh, lm] = config.lunchTime.split(':')
-                const [gh, gm] = config.getOffTime.split(':')
+                if(config.sleepTime!= '') {
+                    if(`${fillZero(sh)}`===`${fillZero(now.getHours())}`) {
+                        gobed()
+                    }
+                }
                 if (`${fillZero(lh)}:${fillZero(lm)}`===`${fillZero(now.getHours())}:${fillZero(now.getMinutes())}`) {
                     getWeatherInfo(config.defaultCity, 1)
                 }
@@ -113,6 +119,10 @@ function extractInfo(parm: any) {
         tmpRange.min +
         '°C'
     )
+}
+
+function gobed ():void {
+    vscode.window.showInformationMessage(`再不睡就要掉头发了啊` + ' ~ ಠ_ಠ ~')
 }
 
 function fillZero(timeStr: String | Number) : String {

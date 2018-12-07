@@ -1,4 +1,9 @@
 # Change Log 
++ 1.0.4
+```
+1. 晚上提醒该歇了~ 要做个养生程序员
+2. MD 的setting 换成图片 :( VS Code 插件MD 与 github MD的 table 语法不兼容
+```
 + 1.0.3 
 修改版本号
 + 1.0.1 修复bug...

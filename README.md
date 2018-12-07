@@ -15,24 +15,17 @@ Keep good hours , Have meals on time.
  At least there's still me, reminding you eat on time and get off work.
 
 
+![image](https://myimage.kaier33.top/lunch.gif)
+
+
 ***
 ## Quick start:  
 > commands  ```ctrl+shift+,``` =>  Link Start!
 
-> setting 
+> setting
 
-Name | Description | Default 
-| ------ | ------ | ------ |
-CaringOtaku.defaultCity | 城市名，支持拼音和中文(建议) | 深圳
-CaringOtaku.freeweatherAK | 京东万象KEY(免费),建议使用自己的 | my key
-CaringOtaku.lunchTime | 吃饭时间 | 11:50
-CaringOtaku.getOffTime | 下班时间 | 18:00
+![image](https://myimage.kaier33.top/setting.png)
 
-
-### 1.0.3
+### 1.0.4
 
 **Enjoy!**
-
-todo: 
-1. MD的 setting 改成图片. 在扩展中不渲染表格
-2. 凌晨提示取睡觉! 
