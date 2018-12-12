@@ -18,6 +18,10 @@ Keep good hours , Have meals on time.
 
 
 ***
+## Install
+在插件商城中搜索 **caring_otaku**.  
+Search for **caring_otaku** in the extension store.
+
 ## Quick start:  
 > commands  ```ctrl+shift+,``` =>  Link Start!
 
