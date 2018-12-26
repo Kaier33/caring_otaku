@@ -23,7 +23,7 @@ Keep good hours , Have meals on time.
 Search for **caring_otaku** in the extension store.
 
 ## Quick start:  
-> commands  ```ctrl+shift+,``` =>  Link Start!
+> commands  ```ctrl+shift+,``` =>  Link Start! 启动插件
 
 ## Setting:
 | Name                        |      Description                |       Default                  |
