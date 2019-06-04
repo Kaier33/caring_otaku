@@ -3,7 +3,7 @@
     "displayName": "caring_otaku",
     "description": "caring_otaku",
     "publisher": "KaierChou",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "engines": {
         "vscode": "^1.29.0"
     },
@@ -32,10 +32,12 @@
     "main": "./out/extension",
     "icon": "icon.png",
     "contributes": {
-        "commands": [{
-            "command": "extension.caringOtaku",
-            "title": "Caring Otaku"
-        }],
+        "commands": [
+            {
+                "command": "extension.caringOtaku",
+                "title": "Caring Otaku"
+            }
+        ],
         "configuration": {
             "type": "object",
             "title": "caringOtaku configuration",
@@ -64,14 +66,26 @@
                     "type": "string",
                     "default": "00:00",
                     "description": "set go to bed time times"
+                },
+                "CaringOtaku.customNotification": {
+                    "type": "string",
+                    "default": "",
+                    "description": "remind you to do something regularly; e.g. Water Drink Reminder"
+                },
+                "CaringOtaku.reminderInterval": {
+                    "type": "string",
+                    "default": "3600000",
+                    "description": "reminder interval, Unit is MS, Default value is one hour; (CaringOtaku.customNotification must be filled in for it to take effect)"
                 }
             }
         },
-        "keybindings": [{
-            "command": "extension.caringOtaku",
-            "key": "ctrl+shift+,",
-            "mac": "ctrl+shift+,"
-        }]
+        "keybindings": [
+            {
+                "command": "extension.caringOtaku",
+                "key": "ctrl+shift+,",
+                "mac": "ctrl+shift+,"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
