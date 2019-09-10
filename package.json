@@ -3,7 +3,7 @@
     "displayName": "caring_otaku",
     "description": "caring_otaku",
     "publisher": "KaierChou",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "engines": {
         "vscode": "^1.29.0"
     },
@@ -95,11 +95,11 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.21",
-        "tslint": "^5.8.0",
+        "@types/mocha": "^2.2.42",
         "@types/node": "^8.10.25",
-        "@types/mocha": "^2.2.42"
+        "tslint": "^5.8.0",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.36"
     },
     "dependencies": {
         "web-request": "^1.0.7"

@@ -22,20 +22,23 @@ At least there's still me, reminding you eat on time and get off work.
 Search for **caring_otaku** in the extension store.
 
 ## Quick start:  
-> commands  ```ctrl+shift+,``` =>  Link Start! 启动插件
+> commands:  
+  win: ```ctrl + shift + ,```  
+  osx: ```⌃ + ⬆ + ,```  
+Link Start! 启动插件
 
 ## Setting:
 | Name                             |      Description                |       Default                  |
 | :--------------------------      | :-----------------------------: | :----------------------------- |
-| `CaringOtaku.defaultCity`        | `CityName`                      |   `深圳. (支持 中文/pinyin)`    |
+| `CaringOtaku.defaultCity`        | `CityName`                      |   `深圳(支持 中文/pinyin)`    |
 | `CaringOtaku.freeweatherAK`      | `京东万象key(免费), 建议用自己的`   |   `my key`                     |
 | `CaringOtaku.lunchTime`          | `吃饭饭`                         |  `11:50`                       |
 | `CaringOtaku.getOffTime`         | `下班肥家`                       |  `18:00`                       |
 | `CaringOtaku.sleepTime`          | `养生🐒`                        |  `00:00 (不传值则不提醒) `       |
-| `CaringOtaku.customNotification` | `自定义通知`                      |  `默认为空,(不传值则不提醒)`       |
+| `CaringOtaku.customNotification` | `自定义通知`                      |  `默认为空(不传值则不提醒,eg:多喝热水)`       |
 | `CaringOtaku.reminderInterval`   | `通知间隔`                        |  `默认一小时, 填写单位为毫秒`       |
 
-### 1.0.6
+### 1.0.7
 
 **Enjoy!**
 
