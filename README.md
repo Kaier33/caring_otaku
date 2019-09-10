@@ -22,7 +22,6 @@ At least there's still me, reminding you eat on time and get off work.
 Search for **caring_otaku** in the extension store.
 
 ## Quick start:  
-> commands:  
   win: ```ctrl + shift + ,```  
   osx: ```⌃ + ⬆ + ,```  
 Link Start! 启动插件
